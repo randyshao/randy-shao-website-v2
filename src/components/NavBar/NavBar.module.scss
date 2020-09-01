@@ -1,0 +1,42 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.NavBar {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+}
+
+.Container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+  padding: 40px;
+}
+
+.NavItems {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+
+.NavItems li {
+  padding: 0 30px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
