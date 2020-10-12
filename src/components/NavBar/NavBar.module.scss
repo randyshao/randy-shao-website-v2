@@ -14,7 +14,13 @@ a {
   position: sticky;
   top: 0;
   left: 0;
-  font-weight: 400;
+  font-weight: 600;
+  z-index: 100;
+  .Logo {
+    border: 3px solid white;
+    padding: 5px;
+    border-radius: 7px;
+  }
 }
 
 .Container {
@@ -22,7 +28,8 @@ a {
   width: 100%;
   justify-content: space-between;
   list-style: none;
-  padding: 40px;
+  padding: 20px;
+  max-width: 1100px;
 }
 
 .NavItems {
@@ -39,4 +46,10 @@ li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
+}
+
+@media (min-width: 568px) {
+  .Container {
+    padding: 40px;
+  }
 }

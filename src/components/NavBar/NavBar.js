@@ -7,11 +7,11 @@ const NavBar = () => {
     <header className={Styles.NavBar}>
       <div className={Styles.Container}>
         <li>
-          <Link to="/">R.</Link>
+          <Link to="/"><span className={Styles.Logo}>R.</span></Link>
         </li>
         <nav className={Styles.NavItems}>
           <li>
-            <Link to="/">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
             <Link to="/">Gallery</Link>

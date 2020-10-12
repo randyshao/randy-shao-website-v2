@@ -1,0 +1,38 @@
+.ProjectCard {
+  padding: 20px;
+  background-color: #1a1a1a;
+  text-align: center;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+  margin: 30px 0;
+  line-height: 1.5em;
+  .ImageWrapper {
+    img {
+      width: 300px;
+      height: 168.75px;
+      object-fit: cover;
+      filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.5));
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ProjectCard {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+  }
+
+  .ImageWrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .ProjectDescription {
+    text-align: left;
+    flex-basis: 55%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
