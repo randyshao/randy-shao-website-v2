@@ -7,18 +7,17 @@ const Footer = () => {
     return (
         <footer className={Styles.Footer}>
             <div className={Styles.Container}>
-                <div>
-                    <span>
+                <div >
+                    <span style={{paddingRight: "20px"}}>
                         <FontAwesomeIcon icon={faInstagram} size="2x" />
                     </span>
-                    <span>
+                    <span style={{paddingRight: "20px"}}> 
                         <FontAwesomeIcon icon={faGithub} size="2x" />
                     </span>
-                    <span>
+                    <span style={{paddingRight: "20px"}}>
                         <FontAwesomeIcon icon={faLinkedin} size="2x" />
                     </span>
                 </div>
-                © {new Date().getFullYear()}, Built with <a href="https://www.gatsbyjs.org">Gatsby</a> 
             </div>
         </footer>
     )

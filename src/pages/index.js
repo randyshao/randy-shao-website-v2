@@ -1,6 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 import Styles from "./index.module.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import Randy from "../images/randy-home.jpg"
 
 import Layout from "../components/layout"
@@ -16,13 +19,34 @@ const IndexPage = () => (
     <div className={Styles.IndexBanner}>
       <img src={Randy} alt="Randy" className={Styles.HomeImage} />
       <div className={Styles.BannerText}>
-        <h1>Hey! I'm Randy.</h1>
+        <h1>Hey! I'm <span style={{color: "#6FCF97"}}>Randy</span>.</h1>
         <h3>
           I'm a computer science student from{" "}
-          <Link to="https://www.queensu.ca/">Queen's University</Link> in
+          <Link to="https://www.queensu.ca/"><span className={Styles.Queens}>Queen's University</span></Link> in
           Kingston, Ontario.
         </h3>
-        <p>Check out what I've been working on.</p>
+        <div className={Styles.Logos}>
+          <Link to="https://www.instagram.com/shaozr/">
+            <div>
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </div>
+          </Link>
+          <Link to="https://www.github.com/randyshao/">
+            <div>
+              <FontAwesomeIcon icon={faGithub} size="2x" />
+            </div>
+          </Link>
+          <Link to="https://www.linkedin.com/in/randyshao/">
+            <div>
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </div>
+          </Link>
+          <a href="mailto:shao.randy@gmail.com">
+            <div>
+              <FontAwesomeIcon icon={faEnvelope} size="2x" />
+            </div>
+          </a>
+        </div>
       </div>
     </div>
     <div className={Styles.FeaturedSection}>
