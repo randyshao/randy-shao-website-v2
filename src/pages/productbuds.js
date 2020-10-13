@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from "../components/layout"
 import Styles from "./index.module.scss"
-import PB from '../images/project-2.png'
+import PB from '../images/project2.png'
 
 const boomerang = () => {
     return (

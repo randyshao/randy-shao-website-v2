@@ -10,8 +10,8 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 import ProjectCard from "../components/ProjectCard/ProjectCard"
-import Project1 from "../images/project-1.png"
-import Project2 from "../images/project-2.png"
+import Project1 from "../images/project1.png"
+import Project2 from "../images/project2.png"
 import ProjectBlock from "../components/ProjectBlock/ProjectBlock";
 
 const IndexPage = () => (
@@ -24,7 +24,7 @@ const IndexPage = () => (
         <h3>
           I'm a computer science student studying at{" "}
           <Link to="https://www.queensu.ca/"><span className={Styles.Queens}>Queen's University</span></Link> in
-          Kingston, Ontario. Currently also a <Link to="https://www.bounceapp.ca/"><span className={Styles.Bounce}>SWE @ Bounce. </span></Link>
+          Kingston, Ontario. Currently also a <Link to="https://www.bounceapp.ca/"><span className={Styles.Bounce}>SWE @ Bounce.</span></Link>
         </h3>
         <div className={Styles.Logos}>
           <Link to="https://www.instagram.com/shaozr/">
