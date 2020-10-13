@@ -24,7 +24,7 @@ const IndexPage = () => (
         <h3>
           I'm a computer science student studying at{" "}
           <Link to="https://www.queensu.ca/"><span className={Styles.Queens}>Queen's University</span></Link> in
-          Kingston, Ontario. Currently also a <Link to="https://www.bounceapp.ca/"><span className={Styles.Bounce}>SWE @ Bounce.</span></Link>
+          Kingston, Ontario. Currently also a <Link to="https://www.bounceapp.ca/"><span className={Styles.Bounce}>SWE @ Bounce. </span></Link>
         </h3>
         <div className={Styles.Logos}>
           <Link to="https://www.instagram.com/shaozr/">

@@ -24,7 +24,7 @@ const boomerang = () => {
                     <div className={Styles.Overview}>
                         <h3>Overview.</h3>
                         <p>As a web developer, it's important to get involved with projects that have the ability to impact people on a large scale. So when I found out that Product Buds, a global community of aspiring product managers, were looking for someone to develop their website from the ground up, I couldn't let this opportunity pass.
-                            In terms of development, I decided to code the site in React with Gatsby as my React framework for optimal SEO and static site generation.
+                            In terms of development, I decided to code the site in React with Gatsby as my React framework for optimal SEO and static site generation. Whilst developing a website for thousands of community members, I made it a priority to ensure accessibility for all, which involved doing interviews with some members with visual impairments.
                         </p>
                     
                         <h3>Result.</h3>
