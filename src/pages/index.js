@@ -12,6 +12,7 @@ import SEO from "../components/seo"
 import ProjectCard from "../components/ProjectCard/ProjectCard"
 import Project1 from "../images/project-1.png"
 import Project2 from "../images/project-2.png"
+import ProjectBlock from "../components/ProjectBlock/ProjectBlock";
 
 const IndexPage = () => (
   <Layout>
@@ -21,9 +22,9 @@ const IndexPage = () => (
       <div className={Styles.BannerText}>
         <h1>Hey! I'm <span style={{color: "#6FCF97"}}>Randy</span>.</h1>
         <h3>
-          I'm a computer science student from{" "}
+          I'm a computer science student studying at{" "}
           <Link to="https://www.queensu.ca/"><span className={Styles.Queens}>Queen's University</span></Link> in
-          Kingston, Ontario.
+          Kingston, Ontario. Currently also a <Link to="https://www.bounceapp.ca/"><span className={Styles.Bounce}>SWE @ Bounce.</span></Link>
         </h3>
         <div className={Styles.Logos}>
           <Link to="https://www.instagram.com/shaozr/">
@@ -51,9 +52,16 @@ const IndexPage = () => (
     </div>
     <div className={Styles.FeaturedSection}>
       <h3>Featured.</h3>
-      <ProjectCard img={Project1} title="Boomerang" description="A 3-month project initiative, aimed to tackle the problem of receiving post-interview feedback as a job candidate."/>
-      <ProjectCard img={Project2} title="Product Buds" description="Building a website from the ground up for a global community of aspring product mangers."/>
-      <ProjectCard img={Project1} title="Bounce" description="Working for a startup aiming to be the one-stop shop for all your events hosting needs."/>
+      <Link to="/boomerang"><ProjectCard img={Project1} title="Boomerang" description="A 3-month project initiative, aimed to tackle the problem of receiving post-interview feedback as a job candidate."/></Link>
+      <Link to="/productbuds"><ProjectCard img={Project2} title="Product Buds" description="Building a website from the ground up for a global community of over 3000 members, all aspiring to become product managers."/></Link>
+    </div>
+    <div className={Styles.Projects}>
+      <h3>More Work.</h3>
+      <div className={Styles.ProjectsContainer}>
+        <Link to="https://sandwich-maker-9b098.firebaseapp.com/" target="_blank"><ProjectBlock title="Sandwich Maker" description="A mobile responsive single-page web application that simulates a food ordering system, allowing users to build and order sandwiches, built with React, Redux and Google Firebase."/></Link>
+        <Link to="https://randyshao-game-show-app.netlify.app/" target="_blank"><ProjectBlock title="Wheel of Fortune" description="Based off the popular game show, this version of 'Wheel of Fortune' was created with HTML, CSS, and JavaScript." /></Link>
+        <Link to="https://github.com/helenwxdong/ampHacks-Team-8/tree/main/kandor" target="_blank"><ProjectBlock title="Kandor" description="A web and messaging application using React and Google Firebase that connects elders with each other based on their personal interests."/></Link>
+      </div>
     </div>
   </Layout>
 )

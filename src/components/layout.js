@@ -13,6 +13,7 @@ import Footer from "./Footer/Footer"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
+  
   return (
     <>
       <NavBar />

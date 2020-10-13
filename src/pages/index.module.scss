@@ -15,8 +15,19 @@ h3 {
   line-height: 1.5em;
 }
 
+p {
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.Container {
+  max-width: 1100px;
+  margin: auto;
+}
+
 .HomeImage {
   width: 300px;
+  filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.5));
 }
 
 .IndexBanner {
@@ -26,6 +37,14 @@ h3 {
 }
 
 .Queens {
+  color: #f3de24;
+  transition: 0.3s;
+  &:hover {
+    color: #bdaa00;
+  }
+}
+
+.Bounce {
   color: #56ccf2;
   transition: 0.3s;
   &:hover {
@@ -36,10 +55,12 @@ h3 {
 .Logos {
   margin-top: 30px;
   display: flex;
+  justify-content: center;
   div {
     padding-right: 30px;
     transition: 0.3s;
     width: 100%;
+    color: #000;
     &:hover {
       transform: translateY(-5px);
     }
@@ -75,10 +96,146 @@ h3 {
     justify-content: center;
     width: 55%;
   }
+  .Logos {
+    justify-content: flex-start;
+  }
 }
 
 .FeaturedSection {
   padding: 40px 20px;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.Projects {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ProjectsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1100px) {
+    justify-content: space-between;
+  }
+}
+
+.BoomerangBanner {
+  background-color: #bbe2ff;
+  height: 80vh;
+  overflow: hidden;
+  text-align: center;
+  h2 {
+    margin: 30px 10px;
+    color: #00497d;
+  }
+  h3 {
+    color: #359be4;
+  }
+  img {
+    width: 550px;
+    overflow: hidden;
+  }
+}
+
+.ProjectOverview {
+  margin: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .Details {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.PBBanner {
+  background-color: #a0e5a9;
+  height: 80vh;
+  overflow: hidden;
+  text-align: center;
+  h2 {
+    margin: 30px 10px;
+    color: #089773;
+  }
+  h3 {
+    color: #469987;
+  }
+  img {
+    width: 850px;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.5));
+  }
+}
+
+/*****ABOUT*****/
+
+.About {
+  margin: 0 20px;
+}
+
+.AboutSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 375px;
+    margin: 50px 0;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.5));
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .About {
+    flex-direction: row;
+    .AboutSection {
+      flex-direction: row;
+      justify-content: space-between;
+      .AboutMe {
+        flex-basis: 60%;
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .About {
+    margin: 0;
+  }
+}
+
+.Overview {
+  img {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.Photos {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  img {
+    width: 300px;
+    margin: 30px;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.5));
+    transition: 0.3s;
+    &:hover {
+      box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.3);
+    }
+  }
 }
