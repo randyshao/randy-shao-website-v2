@@ -25,14 +25,14 @@ const about = () => {
           </div>
           <h3 style={{textAlign: "center"}}>A VERY small sample of my photos.</h3>
           <div className={Styles.Photos}>
-            <img src={Photo1} alt='' />
-            <img src={Photo2} alt='' />
-            <img src={Photo3} alt='' />
+            <img src={Photo1} alt='Photo1' />
+            <img src={Photo2} alt='Photo2' />
+            <img src={Photo3} alt='Photo3' />
           </div>
           <div className={Styles.Photos}>
-            <img src={Photo4} alt='' />
-            <img src={Photo5} alt='' />
-            <img src={Photo6} alt='' />
+            <img src={Photo4} alt='Photo4' />
+            <img src={Photo5} alt='Photo5' />
+            <img src={Photo6} alt='Photo6' />
           </div>
         </div>
       </div>
