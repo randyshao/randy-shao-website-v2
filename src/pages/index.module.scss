@@ -158,10 +158,62 @@ p {
   margin: 0 20px;
 }
 
-@media (min-width: 768px) {
-  .Details {
-    display: flex;
-    justify-content: space-between;
+.IntroSection {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #f2f2f2;
+  ul {
+    list-style: none;
+    padding: 2em;
+    margin: 0;
+    li {
+      padding: 0.25em 0;
+      font-weight: 500;
+    }
+  }
+  p {
+    padding: 2em;
+    grid-column: 1/4;
+  }
+}
+
+.SurveyResults {
+  margin: 5em 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5em;
+  span {
+    color: #999999;
+    font-size: 0.8em;
+  }
+  h3 {
+    margin: 0;
+    color: #2f80ed;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.CompanyReasons {
+  margin: 5em 0;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-auto-columns: 200px minmax(auto);
+  h4 {
+    color: #2f80ed;
+  }
+}
+
+.Personas {
+  display: flex;
+  margin: 4em 0;
+}
+
+@media (min-width: 556px) {
+  img {
+    margin: 0 !important;
   }
 }
 
