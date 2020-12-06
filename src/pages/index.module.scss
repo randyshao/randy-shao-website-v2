@@ -160,8 +160,6 @@ p {
 
 .IntroSection {
   margin-top: 2em;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   background-color: #f2f2f2;
   ul {
     list-style: none;
@@ -174,25 +172,60 @@ p {
   }
   p {
     padding: 2em;
-    grid-column: 1/4;
   }
 }
 
-.SurveyResults {
-  margin: 5em 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.5em;
-  span {
-    color: #999999;
-    font-size: 0.8em;
+@media (min-width: 556px) {
+  .IntroSection {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #f2f2f2;
+    ul {
+      list-style: none;
+      padding: 2em;
+      margin: 0;
+      li {
+        padding: 0.25em 0;
+        font-weight: 500;
+      }
+    }
+    p {
+      padding: 2em;
+      grid-column: 1/4;
+    }
   }
-  h3 {
-    margin: 0;
-    color: #2f80ed;
+}
+
+@media (min-width: 556px) {
+  .SurveyResults {
+    margin: 5em 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5em;
+    span {
+      color: #999999;
+      font-size: 0.8em;
+    }
+    h3 {
+      margin: 0;
+      color: #2f80ed;
+    }
+    p {
+      margin: 0;
+    }
   }
-  p {
-    margin: 0;
+  .SurveyResultsMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 556px) {
+  .SurveyResults {
+    display: none;
+  }
+  .SurveyResultsMobile {
+    margin: 5em 0;
   }
 }
 

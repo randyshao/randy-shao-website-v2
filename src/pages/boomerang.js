@@ -132,6 +132,35 @@ const boomerang = () => {
                 of candidates found their feedback to be useless/inactionable
               </p>
             </div>
+
+            <div className={Styles.SurveyResultsMobile}>
+              <p>
+                <span style={{ color: "#2f80ed" }}>94% </span>of candidates want
+                interview feedback after an interview
+              </p>
+              <p>
+                <span style={{ color: "#999999" }}>
+                  Of those who want interview feedback,
+                </span>{" "}
+                <span style={{ color: "#2f80ed" }}>60%</span> of candidates
+                don't receive feedback
+              </p>
+              <p>
+                <span style={{ color: "#999999" }}>
+                  Of those who didn't receive feedback,{" "}
+                </span>
+                <span style={{ color: "#2f80ed" }}>77%</span> of candidates were
+                ghosted
+              </p>
+              <p>
+                <span style={{ color: "#999999" }}>
+                  Of those who did receive feedback,{" "}
+                </span>
+                <span style={{ color: "#2f80ed" }}>76%</span> of candidates
+                found their feedback to be useless/inactionable
+              </p>
+            </div>
+
             <div style={{ margin: "0 auto", textAlign: "center" }}>
               <img src={Feedback} alt="feedback" width="80%" />
             </div>
@@ -352,7 +381,7 @@ const boomerang = () => {
               nothing short of thrilling, and it wouldn't have been possible
               without such passionate and dedicated teammates. Working on
               Boomerang has taught me a lot about
-              <strong> eliminating silos between multiple user groups.</strong>
+              <strong> eliminating silos between multiple user groups. </strong>
               When we first approached the problem of the barriers of acquiring
               post-interview feedback, we focused solely on the job candidate
               and making a product for them. However, after having key
