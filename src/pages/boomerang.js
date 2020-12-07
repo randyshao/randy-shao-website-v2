@@ -15,8 +15,19 @@ import IterationCandidate2 from "../images/iteration-candidate-2.png"
 import IterationInterviewer1 from "../images/iteration-interviewer-1.png"
 import IterationInterviewer2 from "../images/iteration-interviewer-2.png"
 import IterationInterviewer3 from "../images/iteration-interviewer-3.png"
+import CandidateFlow from "../images/candidate-flow.mp4"
 
 const boomerang = () => {
+  // useEffect(() => {
+  //   try {
+  //     let vid1 = document.getElementById("vid-1")
+  //     vid1.play().catch(err => {
+  //       console.log("ERROR STARTING VIDEO", err)
+  //     })
+  //   } catch (err) {
+  //     console.log(err)
+  //   }
+  // })
   return (
     <Layout>
       <div className={Styles.BoomerangBanner}>
@@ -373,6 +384,11 @@ const boomerang = () => {
                 that our platform mandates that no legal action can be taken.
               </li>
             </ul>
+            <div className={Styles.Video}>
+              <video muted loop controls>
+                <source src={CandidateFlow} type="video/mp4" />
+              </video>
+            </div>
             <h3>Conclusion.</h3>
             <p>
               Despite diving head first into this project with a group of
@@ -402,20 +418,6 @@ const boomerang = () => {
               a group of Sr. Product Managers at Google, Linkedin, Salesforce
               and more!
             </p>
-            {/* <p>
-              So this begs the question, what's next for Boomerang? Stay tuned
-              to find out... In the mean time, check out our{" "}
-              <a
-                className={Styles.Bounce}
-                href="https://devpost.com/software/boomerang"
-              >
-                devpost
-              </a>{" "}
-              for our demo and pitchdeck!
-            </p>
-            <div style={{ textAlign: "center" }}>
-              <img src={Demo} alt="demo" />
-            </div> */}
           </div>
         </div>
       </div>

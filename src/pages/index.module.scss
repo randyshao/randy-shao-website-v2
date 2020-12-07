@@ -361,3 +361,17 @@ p {
     }
   }
 }
+
+.Video {
+  video {
+    width: 325px;
+  }
+}
+
+@media (min-width: 556px) {
+  .Video {
+    video {
+      width: 100%;
+    }
+  }
+}
