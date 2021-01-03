@@ -15,8 +15,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectCard from "../components/ProjectCard/ProjectCard"
 import Project1 from "../images/project1.png"
-// import Project2 from "../images/project2.png"
-import Project3 from "../images/project3.png"
+import Project2 from "../images/project2.png"
+// import Project3 from "../images/project3.png"
 import ProjectBlock from "../components/ProjectBlock/ProjectBlock"
 
 const IndexPage = () => (
@@ -80,7 +80,7 @@ const IndexPage = () => (
       </Link> */}
       <Link to="/bounce">
         <ProjectCard
-          img={Project3}
+          img={Project2}
           title="Bounce"
           description="Redesigning and developing a website for an events hosting and peer-to-peer payment startup."
         />
