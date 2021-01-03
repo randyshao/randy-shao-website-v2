@@ -15,7 +15,7 @@ import NewHomepage from "../images/homepage-new.png"
 import NewPricing from "../images/pricing-new.png"
 import NewFeatures from "../images/features-new.png"
 import Iteration1 from "../images/bounce-iteration1.png"
-import IterationColumn from "../images/bounce-iteration1-column.png"
+import IterationColumn from "../images/bounce-iteration1-layout.png"
 
 const bounce = () => {
   return (
