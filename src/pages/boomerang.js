@@ -240,26 +240,38 @@ const boomerang = () => {
             </p>
             <h4>Narrowing down our target market</h4>
             <p>
-              For our initial MVP, we narrowed down it down to target job
+              For our initial research, we narrowed it down to target job
               seekers and companies with the following attributes:
             </p>
             <ul>
               <li>
-                Student job candidates looking for internships/new-grad
-                opportunities.
+                <strong>
+                  Student job candidates looking for internships/new-grad
+                  opportunities
+                </strong>{" "}
+                - We interviewed job seekers from different demographics. We
+                found that students and new grads would be able to reap a
+                greater reward as the younger job market has less experience
+                with job interviewing than the older demographic. Additionally,
+                students and new grads tend to have more interviews in a shorter
+                period of time as many of them apply to tens of hundreds of job
+                applications.
               </li>
               <li>
-                Roles in software engineering - In general, SWE interviews have
-                more quantifiable performance metrics than alternative
-                positions, removing some subjectivity from the provided
-                feedback.
+                <strong>Roles in software engineering</strong> - In general, SWE
+                interviews have more quantifiable performance metrics than
+                alternative positions, removing some subjectivity from the
+                provided feedback and potentially opening up legal concerns.
               </li>
               <li>
-                Smaller startups/companies hiring for these roles (less than 100
-                employees) - After speaking to hiring managers from larger
-                companies, these companies tend to have pre-established, lengthy
-                hiring processes and would be too slow to integrate our new
-                product into their funnels.
+                <strong>
+                  Smaller startups/companies hiring for these roles (less than
+                  100 employees)
+                </strong>{" "}
+                - After speaking to hiring managers from larger companies, these
+                companies tend to have pre-established, lengthy hiring processes
+                and would be too slow to integrate our new product into their
+                funnels.
               </li>
             </ul>
             <h4>Personas</h4>
