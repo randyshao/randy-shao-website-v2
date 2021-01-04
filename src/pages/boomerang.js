@@ -119,7 +119,6 @@ const boomerang = () => {
               gathering research on the company side, in order to gain a deeper
               insight from a company perspective.
             </p>
-
             <h4>Insights - Candidate Side</h4>
             <p>
               When garnering research on job candidates, our main focus was to
@@ -143,7 +142,6 @@ const boomerang = () => {
                 of candidates found their feedback to be useless/inactionable
               </p>
             </div>
-
             <div className={Styles.SurveyResultsMobile}>
               <p>
                 <span style={{ color: "#2f80ed" }}>94% </span>of candidates want
@@ -171,18 +169,16 @@ const boomerang = () => {
                 found their feedback to be useless/inactionable
               </p>
             </div>
-
             <div style={{ margin: "0 auto", textAlign: "center" }}>
               <img src={Feedback} alt="feedback" width="80%" />
             </div>
-
             <h4>Insights - Company Side</h4>
             <p>
               As for the company side, we shifted our focus to gain a better
               understanding as to why a company would choose not to give
               interview feedback. After conducting several interviews with job
               recruiters, hiring managers, and other employees involved in the
-              interview process. We boiled it down for the following reasons.
+              interview process, we boiled it down for the following reasons.
             </p>
             <div className={Styles.CompanyReasons}>
               <h4>Fear of Legal Implications</h4>
@@ -207,33 +203,44 @@ const boomerang = () => {
                 every interviewee.
               </p>
             </div>
-
             <h3>Solution.</h3>
             <p>
               With all of these reasons we gathered from our interviews, we
               altered the scope of our original thoughts on how we could get
               companies to provide feedback to candidates, and reframed our
-              question to then ask:{" "}
+              question to then ask them:{" "}
               <strong>
                 What value could a candidate provide back to a company, AFTER
                 they’ve been rejected?
               </strong>{" "}
-              This question would be answered with:{" "}
-              <strong>
-                “Providing feedback on the companies’ recruiting process”.
-              </strong>
+              To our surprise, the majority of our interviewers answered the
+              question with some variation of this answer:{" "}
+            </p>
+            <p
+              style={{
+                textAlign: "center",
+                fontWeight: "600",
+                fontSize: "1.3em",
+                padding: "2em 0",
+              }}
+            >
+              “Provide feedback on the companies’ recruiting process”.
             </p>
             <p>
               This answer would provide clarity to a potential solution that
               would help solve the problem within the problem space. With this
-              input, we took our one-sided feedback model, and reframed it into
-              feedback exchange between the two parties, bringing more design
-              wrinkles but providing much more value to companies.
+              input, we took our one-sided feedback model, and reframed our
+              potential solution to revolve around{" "}
+              <strong>
+                a feedback exchange between the two parties (job candidate and
+                company),
+              </strong>{" "}
+              bringing more design wrinkles but providing much more value to
+              companies.
             </p>
-
             <h4>Narrowing down our target market</h4>
             <p>
-              For our initial MPV, we narrowed down it down to target job
+              For our initial MVP, we narrowed down it down to target job
               seekers and companies with the following attributes:
             </p>
             <ul>
@@ -260,17 +267,47 @@ const boomerang = () => {
               <img src={Persona1} alt="persona" width="50%" />
               <img src={Persona2} alt="persona" width="50%" />
             </div>
-            <h4>Workflow</h4>
+            <h4>
+              Workflow - How will our product serve these two user groups?
+            </h4>
             <p>
-              Having decided on a two-side exchange feedback model for our
-              product, our next hurdle was to layout the steps within the
-              handlful of user flows that we needed to consider for the
-              platform, such as how candidates/companies would be onboarded, who
-              the feedback would be exchanged, how much customization would we
-              allow for the company to make their feedback forms, and much more.
+              We decided that the most accessible way to facilitate our solution
+              was through a web application. Having decided on a two-side
+              exchange feedback model for our product, our next hurdle was to
+              answer a variety of questions surrounding the general workflow of
+              our program:
             </p>
-            <div style={{ margin: "0 auto", textAlign: "center" }}>
-              <img src={Workflow} alt="workflow" width="70%" />
+            <ul>
+              <li>
+                How would candidates/companies be onboarded to the platform?
+              </li>
+              <li>
+                What mediums should the feedback be given in to either sides?
+                (I.e. Numerical rubrics, comment sections, strengths and
+                improvements, etc.)
+              </li>
+              <li>
+                Should each feedback form be standarized, or should we allow our
+                users to customize the way the feedback is delivered?
+              </li>
+            </ul>
+
+            <div style={{ margin: "0 auto" }}>
+              <img src={Workflow} alt="workflow" width="100%" />
+              <ul>
+                <li>
+                  Once the candidate signs up for the platform for the first
+                  time, any subsequent company that sends them a signup link
+                  will automatically add the company to their list of
+                  interviews, accessible on the platform.
+                </li>
+                <li>
+                  Candidates and company reps (likely the interviewer) cannot
+                  see each other's feedback, until they themselves, have sent
+                  their feedback to the other party, ensuring that both sides
+                  will deliver some form of feedback.
+                </li>
+              </ul>
               <img src={Lofi} alt="workflow" width="100%" />
             </div>
             <h4>Next Iteration</h4>
@@ -291,7 +328,6 @@ const boomerang = () => {
                 interviewer have given their feedback yet.
               </li>
             </ul>
-
             <h4>Final Prototype</h4>
             <p>
               Our final prototype consisted of two separate dashboard views: One
