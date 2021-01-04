@@ -297,6 +297,21 @@ const bounce = () => {
               stage and further my skills with React, was truly a rewarding
               experience.
             </p>
+            <p>
+              I learned that user testing with your customers is crucial to not
+              only ensuring the proper user experience for a product or website,
+              but also consider functionalities about the design that you
+              wouldn't normally consider from the developer/designer side if it
+              was just worked on without external feedback. Check out the site{" "}
+              <a
+                className={Styles.Bounce}
+                href="https://bounceapp.ca"
+                target="_blank"
+                rel="noreferrer"
+              >
+                here!
+              </a>
+            </p>
           </div>
         </div>
       </div>
