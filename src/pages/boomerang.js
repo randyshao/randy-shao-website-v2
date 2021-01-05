@@ -113,8 +113,6 @@ const boomerang = () => {
               issues, in order to validate our assumptions.
             </p>
             <p>
-              After weeks of conducting market research through surveys and
-              interviews with both job candidates and interviewers alike.
               However, we aimed to focus more on conducting interviews when
               gathering research on the company side, in order to gain a deeper
               insight from a company perspective.

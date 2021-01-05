@@ -119,17 +119,6 @@ const bounce = () => {
                 making it an overall less-engaging, less-interactive experience.
               </li>
             </ul>
-            <p
-              style={{
-                textAlign: "center",
-                fontWeight: "600",
-                fontSize: "1.3em",
-                padding: "2em 0",
-              }}
-            >
-              So why don’t more companies give interview feedback, and how could
-              we get them to do so?
-            </p>
             <h3>Goals of Redesign.</h3>
             <div className={Styles.DesignGoals}>
               <div>
