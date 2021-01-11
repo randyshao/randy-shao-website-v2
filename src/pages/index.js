@@ -29,14 +29,12 @@ const IndexPage = () => (
           Hey! I'm <span style={{ color: "#6FCF97" }}>Randy</span>.
         </h1>
         <h3>
-          I'm a computer science student studying at{" "}
+          I'm a product designer and software developer, currently studying
+          computer science at{" "}
           <Link to="https://www.queensu.ca/">
             <span className={Styles.Queens}>Queen's University</span>
           </Link>{" "}
-          in Kingston, Ontario. Currently also a{" "}
-          <Link to="https://www.bounceapp.ca/">
-            <span className={Styles.Bounce}>SWE @ Bounce.</span>
-          </Link>
+          in Kingston, Ontario.
         </h3>
         <div className={Styles.Logos}>
           <Link to="https://www.instagram.com/shaozr/">
@@ -75,7 +73,7 @@ const IndexPage = () => (
         <ProjectCard
           img={Project2}
           title="Product Buds"
-          description="Building a website from the ground up for a global community of over 3000 members, all aspiring to become product managers."
+          description="Building a website from the ground up for a global community of over 3500 members, all aspiring to become product managers."
         />
       </Link> */}
       <Link to="/bounce">
@@ -89,6 +87,21 @@ const IndexPage = () => (
     <div className={Styles.Projects}>
       <h3>More Work.</h3>
       <div className={Styles.ProjectsContainer}>
+        <Link to="https://productbuds.co" target="_blank">
+          <ProjectBlock
+            title="Product Buds"
+            description="Built a website from the ground up using React and Gatsby for a global community of over 3500 members, all aspiring to become product managers."
+          />
+        </Link>
+        <Link
+          to="https://github.com/randyshao/greencoin-chrome-extension/"
+          target="_blank"
+        >
+          <ProjectBlock
+            title="GreenCoin"
+            description="A Google Chrome Extension that helps online shoppers offset their carbon footprint by letting them donate to an environmental non-profit organization at checkout, built with JavaScript, React, and Firebase"
+          />
+        </Link>
         <Link
           to="https://sandwich-maker-9b098.firebaseapp.com/"
           target="_blank"
@@ -98,21 +111,13 @@ const IndexPage = () => (
             description="A mobile responsive single-page web application that simulates a food ordering system, allowing users to build and order sandwiches, built with React, Redux and Google Firebase."
           />
         </Link>
-        <Link to="https://randyshao-game-show-app.netlify.app/" target="_blank">
+
+        {/* <Link to="https://randyshao-game-show-app.netlify.app/" target="_blank">
           <ProjectBlock
             title="Wheel of Fortune"
             description="Based off the popular game show, this version of 'Wheel of Fortune' was created with HTML, CSS, and JavaScript."
           />
-        </Link>
-        <Link
-          to="https://github.com/helenwxdong/ampHacks-Team-8/tree/main/kandor"
-          target="_blank"
-        >
-          <ProjectBlock
-            title="Kandor"
-            description="A web and messaging application using React and Google Firebase that connects elders with each other based on their personal interests."
-          />
-        </Link>
+        </Link> */}
       </div>
     </div>
   </Layout>

@@ -129,7 +129,7 @@ p {
 
 .BoomerangBanner {
   background-color: #bbe2ff;
-  height: 80vh;
+  height: 70vh;
   overflow: hidden;
   text-align: center;
   h2 {
@@ -366,8 +366,9 @@ p {
 }
 
 .Video {
+  padding: 20px;
   video {
-    width: 325px;
+    width: 100%;
   }
 }
 
@@ -452,5 +453,15 @@ p {
       flex-basis: 90%;
       margin-left: 40px;
     }
+  }
+}
+
+.InterviewerTab {
+  background-color: #f2f2f2;
+}
+
+.InterviewerConclusion {
+  li {
+    padding-right: 40px;
   }
 }

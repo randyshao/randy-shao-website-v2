@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import Styles from "./index.module.scss"
+import Conclusion from "../components/Subtabs/Conclusion"
 import Boomerang1 from "../images/boomerang.png"
 import Boomerang2 from "../images/boomerang-2.png"
 // import Demo from "../images/boomerang-demo.gif"
@@ -10,12 +11,6 @@ import Lofi from "../images/lofi.png"
 import Persona1 from "../images/persona1.png"
 import Persona2 from "../images/persona2.png"
 import Iteration2 from "../images/iteration2.png"
-import IterationCandidate1 from "../images/iteration-candidate-1.png"
-import IterationCandidate2 from "../images/iteration-candidate-2.png"
-import IterationInterviewer1 from "../images/iteration-interviewer-1.png"
-import IterationInterviewer2 from "../images/iteration-interviewer-2.png"
-import IterationInterviewer3 from "../images/iteration-interviewer-3.png"
-import CandidateFlow from "../images/candidate-flow.mp4"
 
 const boomerang = () => {
   // useEffect(() => {
@@ -28,15 +23,12 @@ const boomerang = () => {
   //     console.log(err)
   //   }
   // })
+
   return (
     <Layout>
       <div className={Styles.BoomerangBanner}>
         <div className={Styles.Container}>
           <h2>Boomerang</h2>
-          <h3>
-            Providing growth opportunities through simple, enlightening
-            feedback.
-          </h3>
           <img src={Boomerang1} alt="Boomerang" />
           <img src={Boomerang2} alt="Boomerang" />
         </div>
@@ -46,12 +38,9 @@ const boomerang = () => {
           <div className={Styles.IntroSection}>
             <ul>
               <li>
-                <strong>Skills</strong>
+                <strong>Role</strong>
               </li>
-              <li>Product Management</li>
-              <li>UX/UI Design</li>
-              <li>Market Research</li>
-              <li>User Personas</li>
+              <li>Product Designer</li>
             </ul>
             <ul>
               <li>
@@ -70,13 +59,23 @@ const boomerang = () => {
             </ul>
             <p>
               Boomerang is a web platform that streamlines the interview
-              feedback exchange process between job candidates and interviewers.
-              Our product aims to tackle a prominent issue in the job industry:
-              Receiving feedback for a job interview after being rejected from a
-              company. As part of the Product Buds Project Jam, a 3-month
-              initiative where participants work on building a product from
-              ideation to prototype, I worked alongside 4 other students in
-              order to ideate, research, prototype and pitch our product.
+              feedback exchange process between interviewers and job candidates,
+              where interviewers can give job can give interview feedback to
+              candidates in exchange for feedback on their company's recruitment
+              process. Our product aims to tackle a prominent issue in the job
+              industry: Lack of feedback being given on a job interview after
+              being rejected from a company as a candidate. As part of the{" "}
+              <a
+                className={Styles.Bounce}
+                href="https://productbuds.devpost.com/"
+              >
+                Product Buds Project Jam,
+              </a>{" "}
+              a 3-month initiative where participants work on building a product
+              from ideation to prototype, I worked alongside 4 other students in
+              order to ideate, research, prototype and pitch our product. Within
+              my role on the team I conducted user research, took that research
+              and designed the core features of our MVP.
             </p>
           </div>
           <div className={Styles.Overview}>
@@ -108,11 +107,13 @@ const boomerang = () => {
             <p>
               Having the perspective of only one side of the interview process,
               we sought to gain a deeper understanding as to the psychological,
-              operational, and legal barriers behind the interview process.
-              Moreover, we wanted to see how many other job seekers had the same
-              issues, in order to validate our assumptions.
+              operational, and legal barriers behind the recruitment process
+              from a company's point of view. Moreover, we wanted to see how
+              many other job seekers had the same issues, in order to validate
+              our assumptions.
             </p>
             <p>
+              We conducted market research through both surveys and interviews.
               However, we aimed to focus more on conducting interviews when
               gathering research on the company side, in order to gain a deeper
               insight from a company perspective.
@@ -120,7 +121,7 @@ const boomerang = () => {
             <h4>Insights - Candidate Side</h4>
             <p>
               When garnering research on job candidates, our main focus was to
-              justify our concerns, and to get a sense of how many people truly
+              validate our concerns, and to get a sense of how many people truly
               valued feedback but were having trouble obtaining it. Out of 30
               survey responses from job interviewees:
             </p>
@@ -301,12 +302,19 @@ const boomerang = () => {
                 users to customize the way the feedback is delivered?
               </li>
             </ul>
-
             <div style={{ margin: "0 auto" }}>
               <img src={Workflow} alt="workflow" width="100%" />
               <ul>
                 <li>
-                  Once the candidate signs up for the platform for the first
+                  A company employee would set up their account on the platform.
+                  Before booking their interviews, an invite link will be
+                  generated for the company to include in their email when
+                  booking their interview with the candidate. Once the candidate
+                  signs up for the platform, they will be added to the company's
+                  list of job candidates for their position.
+                </li>
+                <li>
+                  After the candidate signs up for the platform for the first
                   time, any subsequent company that sends them a signup link
                   will automatically add the company to their list of
                   interviews, accessible on the platform.
@@ -329,6 +337,11 @@ const boomerang = () => {
                 Received and Feedback Given
               </li>
               <li>
+                A notifications tab to show when the opposite party has
+                submitted their feedback, and when feedback is available to the
+                user.
+              </li>
+              <li>
                 Expanding from a simple input field for the feedback form,
                 allowing interviewers to create their own custom feedback forms
                 to be given to candidate to fill out as a survey.
@@ -346,111 +359,54 @@ const boomerang = () => {
               the same styling and functionality, with a few additional features
               for the interviewer account that are outlined in this section.
             </p>
-            <img
-              src={IterationCandidate1}
-              alt="iteration candidate"
-              width="100%"
-            />
-            <ul>
-              <li>
-                <strong>Reorganization of feedback</strong> - Adding an “Action
-                Items” tab gives the candidate greater clarity on which
-                company’s they must submit their feedback forms to, while
-                consolidating the feedback they’ve already received and given
-                into another tab.
-              </li>
-              <li>
-                <strong>Slight Dashboard Redesign</strong> - List of interviews
-                are put into a single block component, separated by lines, as
-                opposed to having a block for each interview.
-              </li>
-              <li>
-                <strong>Feedback Forms (For Candidate)</strong> - Clear
-                breakdown of feedback, between general, behavioral, and
-                technical feedback sections.
-              </li>
-            </ul>
-            <img
-              src={IterationCandidate2}
-              alt="iteration candidate"
-              width="100%"
-            />
-            <ul>
-              <li>
-                <strong>Feedback Forms (For Interviewer)</strong> - Instead of
-                using a 1-5 rating system, which can be a very subjective and
-                hard-to-interpret rating system, we opted for a descriptive
-                rating system, which would allow for greater clarity on what the
-                candidate liked and disliked about the recruitment process, when
-                filling out the feedback form to the company.
-              </li>
-            </ul>
-            <img
-              src={IterationInterviewer1}
-              alt="iteration interviewer"
-              width="100%"
-            />
-            <ul>
-              <li>
-                <strong>Applicant Tracking System (ATS) Integration</strong> -
-                Allows our platform to connect with existing ATS’s (ex.
-                Greenhouse, Jobvite) through their APIs, auto-populating our
-                main dashboard with a list of job candidates, thus removing the
-                tediousness of manually entering in applicant names.
-              </li>
-            </ul>
-            <img
-              src={IterationInterviewer2}
-              alt="iteration interviewer"
-              width="100%"
-            />
-            <ul>
-              <li>
-                <strong>Stock Roles</strong> - Our templated feedback forms
-                (also known as “Stock Roles”) lets companies to customize their
-                candidate feedback forms for each job posting, allowing them to
-                specify the skills that they are being evaluated on for the
-                specific role, and reuse that base template when interviewers
-                fill out their feedback forms for each candidate.
-              </li>
-            </ul>
-            <img
-              src={IterationInterviewer3}
-              alt="iteration interviewer"
-              width="100%"
-            />
-            <ul>
-              <li>
-                <strong>Feedback Forms</strong> - On top of the templated
-                feedback forms, interviewers can add additional
-                criteria/comments that may have differed from each interview. In
-                order to combat legal implications from potential misinterpreted
-                feedback, our pre-approved feedback options are pulled from a
-                database of options to prevent discriminatory language, ensuring
-                that our platform mandates that no legal action can be taken.
-              </li>
-            </ul>
-            <div className={Styles.Video}>
-              <video muted loop controls>
-                <source src={CandidateFlow} type="video/mp4" />
-              </video>
-            </div>
-            <h3>Conclusion.</h3>
+            <Conclusion />
+
+            <h3>Reflection.</h3>
             <p>
               Despite diving head first into this project with a group of
               strangers spread all across the continent, this experience in
               tackling an prominent issue within the recruitment space has been
               nothing short of thrilling, and it wouldn't have been possible
-              without such passionate and dedicated teammates. Working on
-              Boomerang has taught me a lot about
-              <strong> eliminating silos between multiple user groups. </strong>
-              When we first approached the problem of the barriers of acquiring
-              post-interview feedback, we focused solely on the job candidate
-              and making a product for them. However, after having key
-              conversations with interviewers, we shifted our focus on ways we
-              could eliminate silos between both sides, and provide value to
-              both job canadidates AND interviewers with our platform.
+              without such passionate and dedicated teammates. Here are some of
+              my key reflections and learnings:
             </p>
+            <ul>
+              <li>
+                <strong>The importance of validating assumptions - </strong>When
+                we first approached the problem of the barriers of acquiring
+                post-interview feedback, we focused our problem statement solely
+                on the job candidate and making a product for solve their
+                issues. However, after having key conversations with
+                interviewers, we shifted our focus on ways we could provide
+                value to both job canadidates AND interviewers with our
+                platform.{" "}
+                <strong>
+                  The problem that we initially identified ended up becoming
+                  altered, to which we created a solution that accounted for
+                  both parties,{" "}
+                </strong>
+                which wouldn't have been possible without validating our initial
+                assumptions.
+              </li>
+              <br />
+              <li>
+                <strong>Post-MVP: Anonymous Feedback - </strong>Towards the end
+                of the project, our team had heated discussions about whether
+                feedback given to the company interviewer should be delivered
+                anonymously. This concern was brought up with the thinking that
+                as candidates, we might be reluctent to share negative
+                experience about the recruitment process, as we worry that a
+                recruiter may see our comments and hold resentment towards us,
+                which could effect our chances of being hired by the company
+                again. On the flip side, we could use the feedback form to suck
+                up to a recruiter and praise them heavily, in hopes of
+                increasing our chances of being hired. Anonymity would help
+                preserve the objectivity of the feedback, and help candidates
+                write unbiased comments to the company, and is something we
+                would try to incorporate into a future iteration.
+              </li>
+            </ul>
+
             <p>
               Check out our{" "}
               <a

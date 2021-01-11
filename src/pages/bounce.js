@@ -23,9 +23,6 @@ const bounce = () => {
       <div className={Styles.BoomerangBanner}>
         <div className={Styles.Container}>
           <h2>Bounce</h2>
-          <h3 style={{ margin: "20px" }}>
-            Redefining the events hosting and P2P payment landscape.
-          </h3>
           <img
             src={Bounce2}
             alt="Bounce"
@@ -39,40 +36,43 @@ const bounce = () => {
           <div className={Styles.IntroSection}>
             <ul>
               <li>
-                <strong>Skills</strong>
+                <strong>Role</strong>
               </li>
-              <li>Front-end Development (React)</li>
-              <li>UX/UI Design</li>
-              <li>Visual Design</li>
+              <li>Front-end Developer</li>
+              <li>UX/UI Designer</li>
             </ul>
-            <ul>
-              <li>
-                <strong>Contributors</strong>
-              </li>
-              <li>Richard Hoang</li>
-              <li>Ricky Zhang</li>
-            </ul>
+            <ul></ul>
             <ul>
               <li>
                 <strong>Duration</strong>
               </li>
-              <li>Aug 2020 - Sept 2020</li>
+              <li>Aug 2020 (Design) - Sept 2020 (Development)</li>
             </ul>
             <p>
               Bounce is a startup that aims to redefine the events hosting
               landscape for in-person and virtual events, providing a platform
-              that facilitates event ticketing and P2P payments through their
-              web platform as well as mobile app. Having had the same design
-              since they were founded a couple of years again, I was tasked with
-              rehauling the design of their main website, in order to better
-              reflect their updated brand identity and showcase their newly
-              released features on the platform.
+              that facilitates event ticketing and oeer-to-peer (P2P) payments
+              through their web platform as well as mobile app. Having had the
+              same design since they were founded a couple of years again, I was
+              tasked with rehauling the design of their main website, in order
+              to better reflect their updated brand identity and showcase their
+              newly released features on the platform. Afterwards, I turned
+              these designs into code and redeveloped their site with React and
+              Sass. See what I built by clicking{" "}
+              <a
+                className={Styles.Bounce}
+                href="https://bounceapp.ca"
+                target="_blank"
+                rel="noreferrer"
+              >
+                here!
+              </a>
             </p>
           </div>
           <div className={Styles.Overview}>
             <h3>Current Website Analysis.</h3>
             <p>
-              Before redesigning, I went through the current website with a few
+              Before redesigning the website, I did user testing with a few
               current users of the platform, as well as some friends who had
               never heard of Bounce before, to gauge their impressions of the
               landing pages as well as understand any interaction issues they
@@ -249,14 +249,17 @@ const bounce = () => {
                 different user groups of the platform. The top half of the page
                 emphasizes that Bounces services were made for all types of
                 users, allowing anyone to easily start hosting or attending
-                events through their platform. The middle section goes into
-                detail about the pricing tiers specifically for event hosts,
-                from independent organizers to large organizers. Emphasis is
-                placed on the middle tier by colouring it blue, as that is the
-                target price that has typically been most suitable for our
-                target host users. For the paid tiers, there were "Contact Us"
-                buttons that led to the contact page where event organizers can
-                inquire about the services in more detail.
+                events through their platform.
+                <br />
+                <br />
+                The middle section goes into detail about the pricing tiers
+                specifically for event hosts, from independent organizers to
+                large organizers. Emphasis is placed on the middle tier by
+                colouring it blue, as that is the target price that has
+                typically been most suitable for our target host users. For the
+                paid tiers, there were "Contact Us" buttons that led to the
+                contact page where event organizers can inquire about the
+                services in more detail.
               </p>
               <div className={Styles.BounceImage}>
                 <img src={NewPricing} alt="visual" />
@@ -267,7 +270,7 @@ const bounce = () => {
             <p>
               The old website was already developed with React. So when it came
               time for development, the main focus was overhauling the layout
-              and redefining the parent styles and variables with SASS to match
+              and redefining the parent styles and variables with Sass to match
               the updated design. To keep with the theme of accessibility, I
               went with a mobile first approach and ensured that the site
               experience was consistent across all browsers and mobile devices.
@@ -276,8 +279,8 @@ const bounce = () => {
               time around I wanted to develop many of these components from
               scratch for complete control over the behaviour and style. As for
               the assets such as illustrations and video animations, I got help
-              from my teammates Richard and Ricky who've had experience creating
-              these assets in the past.
+              from my Bounce teammates Richard and Ricky who've had experience
+              creating these assets in the past.
             </p>
             <h3>Takeaways</h3>
             <p>
