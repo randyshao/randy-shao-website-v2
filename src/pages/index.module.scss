@@ -27,13 +27,15 @@ p {
 
 .HomeImage {
   width: 300px;
-  filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.3));
 }
 
 .IndexBanner {
   text-align: center;
   margin: 0 auto;
   padding: 40px 20px;
+  color: var(--text-color);
+  transition: 0.3s;
 }
 
 .Queens {
@@ -60,7 +62,7 @@ p {
     padding-right: 30px;
     transition: 0.3s;
     width: 100%;
-    color: #000;
+    color: var(--text-color);
     &:hover {
       transform: translateY(-5px);
     }
@@ -105,12 +107,14 @@ p {
   padding: 40px 20px;
   max-width: 1100px;
   margin: 0 auto;
+  color: var(--text-color);
 }
 
 .Projects {
   padding: 40px 20px;
   max-width: 1100px;
   margin: 0 auto;
+  color: var(--text-color);
 }
 
 .ProjectsContainer {
@@ -156,11 +160,12 @@ p {
 
 .ProjectOverview {
   margin: 0 20px;
+  color: var(--text-color);
 }
 
 .IntroSection {
   margin-top: 2em;
-  background-color: #f2f2f2;
+  background-color: var(--background-color-secondary);
   ul {
     list-style: none;
     padding: 2em;
@@ -180,7 +185,7 @@ p {
     margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #f2f2f2;
+    background-color: var(--background-color-secondary);
     ul {
       list-style: none;
       padding: 2em;
@@ -380,6 +385,16 @@ p {
   }
 }
 
+.InterviewerTab {
+  background-color: var(--background-color-secondary);
+}
+
+.InterviewerConclusion {
+  li {
+    padding-right: 40px;
+  }
+}
+
 /******BOUNCE******/
 
 @media (min-width: 556px) {
@@ -453,15 +468,5 @@ p {
       flex-basis: 90%;
       margin-left: 40px;
     }
-  }
-}
-
-.InterviewerTab {
-  background-color: #f2f2f2;
-}
-
-.InterviewerConclusion {
-  li {
-    padding-right: 40px;
   }
 }

@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Styles from "./NavBar.module.scss"
 
-const NavBar = () => {
+const NavBar = ({ switchTheme }) => {
   return (
     <header className={Styles.NavBar}>
       <div className={Styles.Container}>
@@ -19,6 +19,13 @@ const NavBar = () => {
             <Link to="https://randyshao.com/" target="_blank">
               Photo
             </Link>
+          </li>
+          <li style={{ paddingRight: "0" }}>
+            <button className={Styles.ThemeSwitcher} onClick={switchTheme}>
+              <span role="img" aria-label="">
+                🌙
+              </span>
+            </button>
           </li>
         </nav>
         {/* <button>Dark</button> */}

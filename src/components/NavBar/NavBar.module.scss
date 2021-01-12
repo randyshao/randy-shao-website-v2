@@ -4,8 +4,10 @@ a {
 }
 
 .NavBar {
-  background-color: #000000;
-  color: white;
+  background-color: var(--background-color);
+  opacity: 0.95;
+  color: var(--text-color);
+  transition: 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +19,7 @@ a {
   font-weight: 600;
   z-index: 100;
   .Logo {
-    border: 3px solid white;
+    border: 3px solid var(--text-color);
     padding: 5px;
     border-radius: 7px;
   }
@@ -44,7 +46,7 @@ a {
 
 li a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
   font-size: 20px;
 }
 
@@ -52,4 +54,12 @@ li a {
   .Container {
     padding: 40px;
   }
+}
+
+.ThemeSwitcher {
+  border: none;
+  background-color: var(--background-color-secondary);
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
 }
