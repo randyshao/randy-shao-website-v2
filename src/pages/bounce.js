@@ -51,7 +51,7 @@ const bounce = () => {
             <p>
               Bounce is a startup that aims to redefine the events hosting
               landscape for in-person and virtual events, providing a platform
-              that facilitates event ticketing and oeer-to-peer (P2P) payments
+              that facilitates event ticketing and peer-to-peer (P2P) payments
               through their web platform as well as mobile app. Having had the
               same design since they were founded a couple of years again, I was
               tasked with rehauling the design of their main website, in order
