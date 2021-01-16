@@ -393,10 +393,10 @@ const boomerang = () => {
                 of the project, our team had heated discussions about whether
                 feedback given to the company interviewer should be delivered
                 anonymously. This concern was brought up with the thinking that
-                as candidates, we might be reluctent to share negative
-                experience about the recruitment process, as we worry that a
+                as candidates, we might be reluctant to share negative
+                experiences about the recruitment process, as we worry that a
                 recruiter may see our comments and hold resentment towards us,
-                which could effect our chances of being hired by the company
+                which could affect our chances of being hired by the company
                 again. On the flip side, we could use the feedback form to suck
                 up to a recruiter and praise them heavily, in hopes of
                 increasing our chances of being hired. Anonymity would help
