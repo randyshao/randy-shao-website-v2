@@ -60,11 +60,11 @@ const boomerang = () => {
             <p>
               Boomerang is a web platform that streamlines the interview
               feedback exchange process between interviewers and job candidates,
-              where interviewers can give job can give interview feedback to
-              candidates in exchange for feedback on their company's recruitment
-              process. Our product aims to tackle a prominent issue in the job
-              industry: Lack of feedback being given on a job interview after
-              being rejected from a company as a candidate. As part of the{" "}
+              where interviewers can give interview feedback to candidates in
+              exchange for feedback on their company's recruitment process. Our
+              product aims to tackle a prominent issue in the job industry: Lack
+              of feedback being given on a job interview after being rejected
+              from a company as a candidate. As part of the{" "}
               <a
                 className={Styles.Bounce}
                 href="https://productbuds.devpost.com/"
