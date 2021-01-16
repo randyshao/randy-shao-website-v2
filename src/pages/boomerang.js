@@ -378,8 +378,7 @@ const boomerang = () => {
                 on the job candidate and making a product for solve their
                 issues. However, after having key conversations with
                 interviewers, we shifted our focus on ways we could provide
-                value to both job canadidates AND interviewers with our
-                platform.{" "}
+                value to both job candidates AND interviewers with our platform.{" "}
                 <strong>
                   The problem that we initially identified ended up becoming
                   altered, to which we created a solution that accounted for
