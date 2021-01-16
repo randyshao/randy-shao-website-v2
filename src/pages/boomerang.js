@@ -8,8 +8,8 @@ import Boomerang2 from "../images/boomerang-2.png"
 import Feedback from "../images/feedback.png"
 import Workflow from "../images/workflow.png"
 import Lofi from "../images/lofi.png"
-import Persona1 from "../images/persona1.png"
-import Persona2 from "../images/persona2.png"
+// import Persona1 from "../images/persona1.png"
+// import Persona2 from "../images/persona2.png"
 import Iteration2 from "../images/iteration2.png"
 
 const boomerang = () => {
@@ -197,9 +197,9 @@ const boomerang = () => {
               </p>
               <h4>The benefits of giving feedback are minimal</h4>
               <p>
-                Recruitment teams may have too many candidates to evaluate to
-                have the operational resources to give personalized feedback to
-                every interviewee.
+                For many companies, it's simply not worth their time to give
+                feedback when the value returned from this action may not be
+                beneficial in any capacity.
               </p>
             </div>
             <h3>Solution.</h3>
@@ -273,11 +273,11 @@ const boomerang = () => {
                 funnels.
               </li>
             </ul>
-            <h4>Personas</h4>
+            {/* <h4>Personas</h4>
             <div className={Styles.Personas}>
               <img src={Persona1} alt="persona" width="50%" />
               <img src={Persona2} alt="persona" width="50%" />
-            </div>
+            </div> */}
             <h4>
               Workflow - How will our product serve these two user groups?
             </h4>
