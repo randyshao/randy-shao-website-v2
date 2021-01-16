@@ -375,10 +375,10 @@ const boomerang = () => {
                 <strong>The importance of validating assumptions - </strong>When
                 we first approached the problem of the barriers of acquiring
                 post-interview feedback, we focused our problem statement solely
-                on the job candidate and making a product for solve their
-                issues. However, after having key conversations with
-                interviewers, we shifted our focus on ways we could provide
-                value to both job candidates AND interviewers with our platform.{" "}
+                on the job candidate and making a product to solve their issues.
+                However, after having key conversations with interviewers, we
+                shifted our focus on ways we could provide value to both job
+                candidates AND interviewers with our platform.{" "}
                 <strong>
                   The problem that we initially identified ended up becoming
                   altered, to which we created a solution that accounted for
