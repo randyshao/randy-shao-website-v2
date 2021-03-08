@@ -93,13 +93,27 @@ const IndexPage = () => (
             description="Built a website from the ground up using React and Gatsby for a global community of over 3500 members, all aspiring to become product managers."
           />
         </Link>
+        <Link to="https://eqworks-product.vercel.app/" target="_blank">
+          <ProjectBlock
+            title="Event Data Visualizer"
+            description="A data-visualization dashboard that displays different metrics of in-person event data that are queried from a PostgreSQL database, built with Next.js, Node.js, Express and D3.js."
+          />
+        </Link>
         <Link
           to="https://github.com/randyshao/greencoin-chrome-extension/"
           target="_blank"
         >
           <ProjectBlock
             title="GreenCoin"
-            description="A Google Chrome Extension that helps online shoppers offset their carbon footprint by letting them donate to an environmental non-profit organization at checkout, built with JavaScript, React, and Firebase"
+            description="A Google Chrome Extension that helps online shoppers offset their carbon footprint by letting them donate to an environmental non-profit organization at checkout, built with JavaScript, React, and Firebase."
+          />
+        </Link>
+      </div>
+      <div className={Styles.ProjectsContainer} style={{ marginTop: "40px" }}>
+        <Link to="https://the-shoppies-nominator.vercel.app/" target="_blank">
+          <ProjectBlock
+            title="Movie Nominator"
+            description="A movie nomination application that queries results from OMDB’s API and allows users to add and remove movies from a personalized list, developed using NextJS, Context, and CSS."
           />
         </Link>
         <Link
@@ -111,13 +125,12 @@ const IndexPage = () => (
             description="A mobile responsive single-page web application that simulates a food ordering system, allowing users to build and order sandwiches, built with React, Redux and Google Firebase."
           />
         </Link>
-
-        {/* <Link to="https://randyshao-game-show-app.netlify.app/" target="_blank">
+        <Link to="https://randyshao-game-show-app.netlify.app/" target="_blank">
           <ProjectBlock
             title="Wheel of Fortune"
             description="Based off the popular game show, this version of 'Wheel of Fortune' was created with HTML, CSS, and JavaScript."
           />
-        </Link> */}
+        </Link>
       </div>
     </div>
   </Layout>
