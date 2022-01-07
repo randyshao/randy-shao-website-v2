@@ -21,7 +21,7 @@ const about = () => {
               <h2>Who am I?</h2>
               <p>
                 Hi! My name is Randy, and it’s a pleasure to meet you. I’m
-                currently a third-year computer science student at Queen’s
+                currently a 4th-year computer science student at Queen’s
                 University in Kingston, Ontario. I love all things tech and
                 business, and am most interested in product management, UX/UI
                 design, front-end development, and the startup scene. If you
